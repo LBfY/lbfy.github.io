@@ -149,27 +149,28 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
   this.bestContainer.textContent = bestScore;
 };
 
+
 HTMLActuator.prototype.message = function (won) {
   var mytxt=new Array(14);
-  mytxt[0]="连秦始皇都见不到了T.T";
-  mytxt[1]="曹贼你还我大汉江山！";
-  mytxt[2]="都是赵高害得我！";
-  mytxt[3]="司马老儿果然奸诈！";
-  mytxt[4]="江山难坐啊！";
-  mytxt[5]="明朝天下一统，可惜看不到了！";
-  mytxt[6]="毁在杨广手里了……";
-  mytxt[7]="安史之乱亡我大唐……";
-  mytxt[8]="赵匡胤黄袍加身，兵不血刃啊！";
-  mytxt[9]="元人铁蹄果然厉害！";
-  mytxt[10]="还是朱元璋厉害……";
-  mytxt[11]="天地会的弟兄们，反清复明啊！";
-  mytxt[12]="连辛亥革命的黎明都没等到……";
-  mytxt[13]="看不到天朝的太阳了 = =";
+  mytxt[0]="First Blood";
+  mytxt[1]="Double Kill";
+  mytxt[2]="Killing Spree";
+  mytxt[3]="Triple Kill";
+  mytxt[4]="Dominating";
+  mytxt[5]="Ultra Kill";
+  mytxt[6]="Mega Kill";
+  mytxt[7]="Rampage";
+  mytxt[8]="Unstoppable";
+  mytxt[9]="Wicked Sick";
+  mytxt[10]="M-m-m-m....Monster Kill";
+  mytxt[11]="Godlike";
+  mytxt[12]="Somebody kill him!";
+  mytxt[13]="Holy Shit";
 
 
   var text3 = function (m) { var r = 0; while (m > 1) r++, m >>= 1; return r; }
   var type    = won ? "game-won" : "game-over";
-  var message = won ? "中华人民共和国万岁！" : mytxt[text3(maxscore)-3];
+  var message = won ? "Ownage" : mytxt[text3(maxscore)-3];
 
   if (typeof ga !== "undefined") {
     ga("send", "event", "game", "end", type, this.score);
@@ -182,6 +183,7 @@ HTMLActuator.prototype.message = function (won) {
   this.sharingContainer.appendChild(this.scoreTweetButton());
   twttr.widgets.load();
 };
+
 
 HTMLActuator.prototype.clearMessage = function () {
   // IE only takes one value to remove at a time.
