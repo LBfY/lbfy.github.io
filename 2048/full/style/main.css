@@ -355,42 +355,46 @@ hr {
     z-index: 10;
     font-size: 44px; }
   .tile.tile-2 .tile-inner {
-    background: url(img/2.jpg);
+    background: #eee4da;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-4 .tile-inner {
-    background: url(img/4.jpg);
+    background: #ede0c8;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-8 .tile-inner {
     color: #f9f6f2;
-    background: url(img/8.jpg);}
+    background: #f2b179; }
   .tile.tile-16 .tile-inner {
     color: #f9f6f2;
-    background: url(img/16.jpg);}
+    background: #f59563; }
   .tile.tile-32 .tile-inner {
     color: #f9f6f2;
-    background: url(img/32.jpg);}
+    background: #f67c5f; }
   .tile.tile-64 .tile-inner {
     color: #f9f6f2;
-    background: url(img/64.jpg);}
+    font-size:32px;
+    background: #f65e3b; }
   .tile.tile-128 .tile-inner {
     color: #f9f6f2;
-    background: url(img/128.jpg);
+    background: #edcf72;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286); }
   .tile.tile-256 .tile-inner {
     color: #f9f6f2;
-    background: url(img/256.jpg);
+    background: #edcc61;
+    font-size:24px;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048); }
   .tile.tile-512 .tile-inner {
     color: #f9f6f2;
-    background: url(img/512.jpg);
+    background: #edc850;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381); }
   .tile.tile-1024 .tile-inner {
     color: #f9f6f2;
-    background: url(img/1024.jpg);
+    background: #ffe07d;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571); }
   .tile.tile-2048 .tile-inner {
     color: #f9f6f2;
-    background: url(img/2048.jpg);
+    background: #ffe38a;
+    font-size:32px;
+    line-height:40px;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571); }
   .tile.tile-4096 .tile-inner {
     background: #ffe697;
@@ -875,3 +879,46 @@ hr {
         .btc-donate .address:after {
           left: 50%;
           bottom: 2px; } }
+
+/* Added by Joy Neop for Protoss. En taro Tassadar! */
+div.tile > div.tile-inner {
+  color: rgba(0, 0, 0, 0) !important;
+  background: #FFFFFF center scroll no-repeat;
+  background-size: cover !important;
+}
+div.tile.tile-2 > div.tile-inner {
+  background-image: url(img/2.jpg);
+}
+div.tile.tile-4 > div.tile-inner {
+  background-image: url(img/4.jpg);
+}
+div.tile.tile-8 > div.tile-inner {
+  background-image: url(img/8.jpg);
+}
+div.tile.tile-16 > div.tile-inner {
+  background-image: url(img/16.jpg);
+}
+div.tile.tile-32 > div.tile-inner {
+  background-image: url(img/32.jpg);
+}
+div.tile.tile-64 > div.tile-inner {
+  background-image: url(img/64.jpg);
+}
+div.tile.tile-128 > div.tile-inner {
+  background-image: url(img/128.jpg);
+}
+div.tile.tile-256 > div.tile-inner {
+  background-image: url(img/256.jpg);
+}
+div.tile.tile-512 > div.tile-inner {
+  background-image: url(img/512.jpg);
+}
+div.tile.tile-1024 > div.tile-inner {
+  background-image: url(img/1024.jpg);
+}
+div.tile.tile-2048 > div.tile-inner {
+  background-image: url(img/2048.jpg);
+}
+.heading h2 {
+  float: left;
+}
