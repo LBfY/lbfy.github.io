@@ -151,18 +151,3 @@ HTMLActuator.prototype.clearMessage = function () {
   this.messageContainer.classList.remove("game-over");
 };
 
-HTMLActuator.prototype.scoreTweetButton = function () {
-  var tweet = document.createElement("a");
-  tweet.classList.add("twitter-share-button");
-  tweet.setAttribute("href", "https://twitter.com/share");
-  tweet.setAttribute("data-via", "lbfy");
-  tweet.setAttribute("data-url", "http://i.lbfy.org/2048");
-  tweet.setAttribute("data-counturl", "http://i.lbfy.org/2048/");
-  tweet.textContent = "Tweet";
-
-  var text = "I scored " + this.score + " points at GengZai's 2048, a game where you " +
-             "join numbers to score high! @LBfY08 ";
-  tweet.setAttribute("data-text", text);
-
-  return tweet;
-};
