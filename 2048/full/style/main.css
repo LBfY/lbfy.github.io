@@ -410,11 +410,11 @@ hr {
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333); }
   .tile.tile-65536 .tile-inner {
     color: #f9f6f2;
-    background: url(img/65536.jpg);
+    background: #ff6666;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333); }
   .tile.tile-131072 .tile-inner {
     color: #f9f6f2;
-    background: url(img/131072.jpg);
+    background: #66ccff;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333); }
   .tile.tile-super .tile-inner {
     color: #f9f6f2;
@@ -880,7 +880,7 @@ hr {
           left: 50%;
           bottom: 2px; } }
 
-/* Added by Joy Neop for Protoss. En taro Tassadar! */
+/* Added by Joy Neop */
 div.tile > div.tile-inner {
   color: rgba(0, 0, 0, 0) !important;
   background: #FFFFFF center scroll no-repeat;
@@ -918,6 +918,25 @@ div.tile.tile-1024 > div.tile-inner {
 }
 div.tile.tile-2048 > div.tile-inner {
   background-image: url(img/2048.jpg);
+}
+/* Add By Lancelot Fong for Extreme Version */
+div.tile.tile-4096 > div.tile-inner {
+  background-image: url(img/4096.jpg);
+}
+div.tile.tile-8192 > div.tile-inner {
+  background-image: url(img/8192.jpg);
+}
+div.tile.tile-16384 > div.tile-inner {
+  background-image: url(img/16384.jpg);
+}
+div.tile.tile-32768 > div.tile-inner {
+  background-image: url(img/32768.jpg);
+}
+div.tile.tile-65536 > div.tile-inner {
+  background-image: url(img/65536.jpg);
+}
+div.tile.tile-131072 > div.tile-inner {
+  background-image: url(img/131072.jpg);
 }
 .heading h2 {
   float: left;
